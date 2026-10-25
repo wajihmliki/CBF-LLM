@@ -1,6 +1,6 @@
 # AdaptiveCBF: Robust Safe Decoding for LLMs via Adaptive Control Barrier Functions
 
-Official implementation of **"Robust Safe Decoding for Large Language Models via Adaptive Control Barrier Functions"** (paper in [`paper/`](paper/)).
+Official implementation of **"Robust Safe Decoding for Large Language Models via Adaptive Control Barrier Functions"**, presented at ICCAS 2026 (paper and poster in [`paper/`](paper/)).
 
 CBF-based decoding ([CBF-LLM](https://arxiv.org/abs/2408.15625)) filters candidate tokens at each generation step using a safety classifier `h(x)`, trusting it as ground truth. In practice that classifier is noisy. This repo implements **AdaptiveCBF**, a drop-in, training-free replacement that adds:
 
@@ -21,7 +21,7 @@ experiment.py      Main runner: sweeps noise levels x filters, used for Tables 1
 experiment_swap.py  Classifier-mismatch runner, used for Table 7
 tests/            Minimal smoke tests (imports, filter math, end-to-end generation on GPT-2)
 results/          Raw JSON outputs behind Tables 1, 3, 5, 6 (Qwen2.5-1.5B)
-paper/            The paper PDF
+paper/            The paper PDF and the ICCAS 2026 conference poster
 ```
 
 ## Setup
